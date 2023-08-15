@@ -1,0 +1,19 @@
+{
+    "name": "coinmarketcap.com autoscroller 🚀",
+    "description": "This extension enables automated scrolling on CoinMarketCap.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [ "activeTab", "scripting" ],
+    "content_scripts": [
+        {
+          "matches": ["https://coinmarketcap.com/*"],
+          "js": [ "jquery-3.7.0.min.js", "autoscroll.js"]
+        }
+    ],
+    "icons": {
+        "16": "/images/icon128.png",
+        "32": "/images/icon48.png",
+        "48": "/images/icon32.png",
+        "128": "/images/icon16.png"
+    }
+}
